@@ -254,7 +254,7 @@ FlutterStandardMethodCodec *_codec;
     settings.dispatchQueue = [FLTFirebaseFirestoreReader getFirestoreQueue];
 
     FIRFirestore *firestore = [FIRFirestore firestoreForApp:app database:databaseUrl];
-    firestore.settings = settings;
+    // firestore.settings = settings;
 
     [FLTFirebaseFirestoreUtils setCachedFIRFirestoreInstance:firestore
                                                   forAppName:app.name
